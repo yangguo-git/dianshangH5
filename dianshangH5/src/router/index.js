@@ -33,7 +33,7 @@ const routes = [{
 	{
 		path: '/ui/home',
 		name: 'home',
-		component: Hello
+		component: Home
 	},
 	{
 		path: '/ui/mine',

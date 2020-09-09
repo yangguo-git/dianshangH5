@@ -1,6 +1,6 @@
 <template>
 	<div class="main">
-		<header-vue title='微应电商'></header-vue>
+		<header-vue title='心意有礼周边'></header-vue>
 		<div v-if="isLoading" class="loadingWrap">
             <van-loading type="spinner" size="20px" />
 		</div>
