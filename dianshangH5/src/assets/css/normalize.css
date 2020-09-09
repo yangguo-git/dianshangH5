@@ -1,0 +1,127 @@
+address,
+caption,
+em,
+strong,
+th,
+i {
+	font-style: normal;
+	font-weight: normal;
+}
+/* 商品展示区 */
+.van-card__price {
+	color: red;
+}
+.partBox .van-card__thumb{
+	width: 59px;
+}
+.van-card__price-integer{
+   font-size: 16px;
+}
+.van-card__price-currency{
+	font-size: 12px;
+}
+.van-card__price-decimal{
+	font-size: 16px;
+}
+/* 点击立即购买 */
+.van-sku-row__item--active{
+  color: #f97c34;
+}
+.van-sku-row__item{
+   border-radius: 10px;
+}
+.van-stepper__minus{
+	border-radius: 8px 0 0 8px;
+}
+.van-stepper__plus{
+	border-radius: 0 8px 8px 0;
+}
+.van-sku-actions .van-button--danger{
+	background: linear-gradient(to right,#f97c34,#f97c34);
+}
+/* 物流信息 */
+.van-steps .van-step__circle{
+	width: 8px;
+	height: 8px;
+}
+/* commoncss*/
+.iconBox .van-tabbar-item__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.van-tabbar-item--active{
+    color: #fc670f;
+}
+/* nav-bar */
+.headWrap .van-nav-bar--fixed{
+    background-color: #fc894c;
+}
+.van-nav-bar__title{
+    color: white;
+    font-size: 20px;
+}
+.van-tag{
+   padding-left: 0px;
+   padding-right: 10px;
+}
+.van-card{
+  background-color: white;
+  position: relative;
+}
+ .van-card__header::after{
+    content:'';
+    position: absolute;
+    width: 91%;
+    display: inline-block;
+    height: 1px;
+    background-color: #ebebeb;
+    bottom: 0px;
+}
+.van-card:last-child .van-card__header::after{
+    height: 0px;
+}
+.van-sidebar-item--select::before{
+    background-color: #f97c34;
+}
+.searchPage .van-search__content{
+    margin-left: 6px;
+}
+.mine-content .van-cell__title{
+    padding-left: 8px;
+}
+.mainPart .van-card:not(:first-child){
+  margin-top: 0px;
+}
+.headWrap .van-nav-bar .van-icon{
+   color: white;
+}
+.headWrap .van-icon-arrow-left{
+	font-size: 22px;
+}
+.confirmWrap .van-card__header::after{
+    height: 0px;
+}
+.van-uploader__upload{
+    border: 1px dashed #cccccc;
+}
+.van-uploader__upload-icon{
+   font-size: 45px;
+}
+/* 收货地址 */
+.adressBox .van-address-edit__buttons{
+	display: flex;
+	flex-direction: row-reverse;
+}
+.adressBox .van-address-edit__buttons .van-button--danger{
+    background: linear-gradient(to right,#f97c34,#f97c34);
+    color: white;
+    border: 1px solid #f97c34;
+    margin-left: 10px;
+}
+.van-swipe__indicator{
+	background-color: #1989fa;
+}
+.headWrap .van-nav-bar__title{
+	font-size: 17px;
+}
