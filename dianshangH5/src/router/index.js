@@ -8,7 +8,6 @@ Vue.use(VueRouter);
 const Home = () => import('@/views/homes/home');
 const Mine = () => import('@/views/mines/mine');
 const Part = () => import('@/views/parts/part');
-const Hello = () => import('@/views/homes/hello');
 const ProductDetail = () => import('@/views/parts/productDetail');
 const Searchpage = () => import('@/views/parts/searchpage');
 const ConfirmOrder = () => import('@/views/parts/confirmOrder');
