@@ -8,7 +8,6 @@ import './config/rem'
 import { getRequest, postRequest,uploadRequest} from './http/index'
 import _ from 'lodash'
 import VueCookies from 'vue-cookies'
-import wx from 'weixin-js-sdk'
 Vue.use(VueCookies)
 //样式
 import './assets/css/normalize.css'
@@ -21,9 +20,6 @@ Vue.prototype.$post = postRequest;
 Vue.prototype.$postImg = uploadRequest;//设置不同的content-type
 Vue.prototype.$lodash=_;
 Vue.use(Vant);
-let options = {
-  fullscreenEl: false
-};
 new Vue({
   router,
   store,
