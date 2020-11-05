@@ -16,21 +16,21 @@ instance.interceptors.request.use(config => {
 });
 
 //封装请求
-function getHttp(url, params) {
+function getRequest(url, params) {
     return instance.get(url, {params})
 }
 
-function postHttp(url, params) {
+function postRequest(url, params) {
     let newParams = qs.parse(qs.stringify(params));
     return instance.post(url, newParams)
 }
 
-function uploadImg(url, params) {
+function uploadRequest(url, params) {
     let newParams = qs.stringify(params);
     return instance.post(url, newParams)
 }
 
-export { getHttp, postHttp,uploadImg }
+export { getRequest, postRequest,uploadRequest }
 
 
 

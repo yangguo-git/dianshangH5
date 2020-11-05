@@ -5,7 +5,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './config/rem'
-import { getHttp, postHttp,uploadImg} from './http/index'
+import { getRequest, postRequest,uploadRequest} from './http/index'
 import _ from 'lodash'
 import VueCookies from 'vue-cookies'
 import wx from 'weixin-js-sdk'
@@ -16,9 +16,9 @@ import './assets/css/normalize.css'
 import './assets/iconfont/iconfont.css'
 Vue.config.productionTip = false;
 
-Vue.prototype.$get = getHttp;
-Vue.prototype.$post = postHttp;
-Vue.prototype.$postImg = uploadImg;
+Vue.prototype.$get = getRequest;
+Vue.prototype.$post = postRequest;
+Vue.prototype.$postImg = uploadRequest;//设置不同的content-type
 Vue.prototype.$lodash=_;
 Vue.use(Vant);
 let options = {
